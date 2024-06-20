@@ -1,0 +1,236 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.person {
+  text-align: center;
+}
+
+.person img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff; /* Optional: Add border */
+}
+
+/* Hover effect for images */
+.person img:hover {
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%; /* Adjust the gap as needed */
+}
+
+.social-icons img {
+width: 20px;
+height: 20px;
+object-fit: cover;
+border-radius: 0%;
+
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar {
+  position: fixed; /* Fix the navbar position */
+  top: 0; /* Position it at the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Take up full width */
+  background-color: #ffffff; /* Add background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: #0000CD solid 2px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px; /* Add space between links */
+}
+
+.nav-links li:first-child {
+  margin-left: 0; /* Reset margin for the first link */
+}
+
+.nav-links li a {
+  color: #333; /* Change link color */
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #555; /* Change link color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Logo styles */
+.logo {
+  margin: 0;
+  float: left; /* Float the logo to the left */
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.nav-links {
+  float: right; /* Float the links to the right */
+  padding-right: 10px;
+}
+
+/* Header container styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+/* h2 {
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0000CD;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+i {
+  font-style: italic;
+}
+
+.section {
+  padding: 10px 0;
+  background-color: #ffffff; /* Background color for the section */
+}
+
+.container {
+  background-color: #ffffff; /* Background color for the content area */
+  border-radius: 3px; /* Rounded corners */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Drop shadow */
+}
+
+/* Adjustments for links within paragraphs */
+p a {
+  color: #0000CD;
+  text-decoration: underline;
+}
+
+.section:first-of-type {
+  margin-top: 2%; /* Adjust this value as needed */
+}
+.footer {
+  background-color: #f9fafb; /* Gray background color */
+  text-align: center; /* Center the text horizontally */
+  /* padding:  0; Add padding for spacing */
+  /* height: 5vh; */
+  /* font-size: 8px; */
+}
+.footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 10px;
+}
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+
+/* Style for h2 elements except the one with id "about" */
+h2:not(#about) {
+  text-align: left; /* Aligns all h2 elements to the right */
+  /* margin-bottom: 0.5em;
+  border-bottom: 0.5px solid gray; Adds a horizontal line underneath */
+}
+
+.links-row {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  gap: 20px; /* Adjust the gap as needed for equal spacing */
+  flex-wrap: wrap;
+}
+
+.links-row a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-row img {
+  max-width: 250px; /* Adjust the size as needed */
+  height: auto;
+}
+
