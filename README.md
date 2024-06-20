@@ -1,2 +1,2 @@
-# pissarides-review.github.io
+# pissarides-review
 Pissarides Review webpage 
